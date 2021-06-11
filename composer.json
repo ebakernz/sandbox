@@ -1,6 +1,6 @@
 {
-    "name": "plasticstudio/skeletor",
-    "description": "The PlasticStudio base SilverStripe project installer",
+    "name": "plasticstudio/TeAuahaEvents",
+    "description": "Weltec and Whitireia's Te Auaha Events website",
     "require": {
         "silverstripe/recipe-plugin": "^1.3",
         "silverstripe/recipe-cms": "^4.7",

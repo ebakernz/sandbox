@@ -1,9 +1,9 @@
 {
-	"name": "skeletor",
+	"name": "teauahaevents",
 	"version": "1.2.0",
 	"author": "PlasticStudio",
-	"description": "Skeleton SilverStripe website",
-	"repository": "https://github.com/plasticstudio/Skeletor",
+	"description": "Te Auaha Events website",
+	"repository": "https://github.com/plasticstudio/TeAuahaEvents",
 	"license": "Apache-2.0",
 	"licenses": [
 		{

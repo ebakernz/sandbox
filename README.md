@@ -1,5 +1,4 @@
-# Skeletor
-PS/digital's recipe for SilverStripe 4 projects. Contains frequently used modules, templates, config settings, JavaScript and CSS.
+# Te Auaha Events / Whitireia and Weltec
 
 
 ## Helpful commands
@@ -38,9 +37,6 @@ The following unit tests cover the `ContactPage` class:
 * `testViewContactPage()` (test the page eis viewable)
 * `testContactForm()` (test the form is accessible, basica validation working and submitting correctly)
 
-### Behavioural Tests (Behat)
-Behat testing is not set up in Skeletor. As a basic starting point for building Behat tests yo ucan add the files contained in `https://github.com/PlasticStudio/behat-base`.
-Follow the instructions in the readme.
 
 
 ## DebugBar
