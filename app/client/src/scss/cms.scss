@@ -1,0 +1,12 @@
+@import "components/cms/image-content-options";
+
+.mce-i-selectall:before {
+  content: "\01F130";
+}
+
+/* Hide admin sections that clients never use */
+#Menu-SilverStripe-CampaignAdmin-CampaignAdmin
+//,#Menu-SilverStripe-Reports-ReportAdmin
+{
+  display: none !important;
+}

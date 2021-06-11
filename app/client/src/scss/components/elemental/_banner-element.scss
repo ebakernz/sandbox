@@ -1,0 +1,26 @@
+.el-banner {
+  width: 100%;
+  @include optimiseBgImg($position: 50% 25%);
+  margin-bottom: $element-gap-bottom-mobile;
+
+  @include breakpoint(smd-and-up) {
+    margin-bottom: $element-gap-bottom-desktop;
+  }
+
+  &--no-image {
+    background: colour(grey);
+  }
+}
+
+.el-banner__inner {
+  min-height: 150px;
+  padding: 30px 5%;
+}
+
+.el-banner__title {
+  color: colour(white);
+}
+
+.el-banner__content {
+  color: colour(white);
+}

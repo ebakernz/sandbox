@@ -1,0 +1,59 @@
+@function breakpoint($value) {
+  $str: "";
+
+  @if map-has-key($display-breakpoints, $value) {
+    $str: map-get($display-breakpoints, $value);
+  } @else {
+    $str: map-get($display-breakpoints, small-and-up);
+    @warn "breakpoint(): \"#{$value}\" is not defined in your $display-breakpoints setting.";
+  }
+
+  @return $str;
+}
+
+@mixin breakpoint($value) {
+  $str: if(map-has-key($display-breakpoints, $value), breakpoint($value), "");
+
+  @if not $str or $str== "" {
+    @content;
+  } @else {
+    @media #{$str} {
+      @content;
+    }
+  }
+}
+
+// Loop each member of $map as key ($class) and val ($colour)
+@each $class, $colour in $colours {
+  // appy color attr to -text classes
+  &.#{$class}-text {
+    color: $colour !important;
+  }
+
+  // appy background-color attr to -bg classes
+  &.#{$class}-bg {
+    background-color: $colour !important;
+
+    &.semi-trans {
+      background-color: rgba($colour, 0.95) !important;
+    }
+
+    .darken {
+      background-color: darken($colour, 5%) !important;
+    }
+  }
+}
+
+/**
+ * Retrieve colour from $colours map
+ * @param  {string} $key [name of colour, as defined in $colours map]
+ * @return hex colour
+ */
+@function colour($key) {
+  @if map-has-key($colours, $key) {
+    @return map-get($colours, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colours.";
+  @return null;
+}

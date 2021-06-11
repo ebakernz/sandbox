@@ -1,0 +1,16 @@
+@import "~sanitize.css";
+@import "~sanitize.css/forms.css";
+@import "~sanitize.css/typography.css";
+@import "~sanitize.css/reduce-motion.css";
+
+@import "global/variables";
+@import "global/helpers";
+@import "global/mixins";
+@import "global/typography";
+@import "global/wysiwyg";
+
+@include wysiwyg-styles;
+
+body {
+  margin: 8px; //reset margin back to normal so wysiwyg has margin
+}

@@ -1,0 +1,21 @@
+.e-embedded-code {
+  margin-bottom: $element-gap-bottom-mobile;
+
+  @include breakpoint(smd-and-up) {
+    margin-bottom: $element-gap-bottom-desktop;
+  }
+}
+
+.e-embedded-code__title {
+  @include h2-mobile;
+  margin-bottom: 24px;
+  text-align: center;
+
+  @include breakpoint(sm-and-up) {
+    @include h2-desktop;
+    margin-bottom: 48px;
+  }
+}
+
+.e-embedded-code__wrapper {
+}

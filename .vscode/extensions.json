@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "tombonnike.vscode-status-bar-format-toggle",
+        "junstyle.php-cs-fixer",
+        "felixfbecker.php-debug",
+        "esbenp.prettier-vscode"
+    ]
+}

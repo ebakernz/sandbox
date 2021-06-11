@@ -1,0 +1,31 @@
+---
+Name: skeletor
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+SilverStripe\Forms\HTMLEditor\TinyMCEConfig:
+  editor_css:
+    - "app/client/dist/editor.css"
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_css:
+    - "app/client/dist/cms.css"
+PlasticStudio\SEO:
+  noindex_domains:
+    - localhost
+    - .plasticstudio.co
+LeKoala\DebugBar\DebugBar:
+  check_local_ip: false
+
+---
+Only:
+  environment: "dev"
+---
+SilverStripe\Core\Injector\Injector:
+  Psr\Log\LoggerInterface:
+    calls:
+      LogFileHandler: [pushHandler, ["%$LogFileHandler"]]
+  LogFileHandler:
+    class: Monolog\Handler\StreamHandler
+    constructor:
+      - "./silverstripe.log"
+      - "info"

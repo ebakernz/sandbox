@@ -1,0 +1,77 @@
+.c-form {
+  input,
+  select,
+  textarea,
+  option,
+  button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid colour(grey);
+
+    &:focus,
+    &:active {
+      border-color: colour(black);
+    }
+  }
+
+  .field {
+    padding-bottom: 15px;
+
+    label {
+      display: block;
+      padding-bottom: 4px;
+    }
+  }
+
+  input[type="submit"] {
+    width: auto;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: colour(white);
+    border: 0;
+    background: colour(grey);
+
+    &:hover {
+      background: darken(colour(grey), 10%);
+    }
+  }
+
+  /**
+  * Removes iOS default styling
+  *
+  * Targets all necessary inputs and removes the blue underline for phone numbers
+  **/
+  button,
+  textarea,
+  input.text,
+  input[type="text"],
+  input[type="button"],
+  input[type="submit"],
+  .input-checkbox {
+    border-radius: 0;
+    -webkit-appearance: none;
+  }
+
+  a[href^="tel"] {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.25);
+  }
+
+  :-moz-placeholder {
+    color: rgba(0, 0, 0, 0.25);
+  }
+
+  ::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.25);
+  }
+
+  :-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.25);
+  }
+}

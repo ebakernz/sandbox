@@ -1,0 +1,42 @@
+.e-single-image {
+  margin-bottom: $element-gap-bottom-mobile;
+
+  @include breakpoint(smd-and-up) {
+    margin-bottom: $element-gap-bottom-desktop;
+  }
+}
+
+.e-single-image__title {
+  @include h2-mobile;
+  margin-bottom: 24px;
+
+  @include breakpoint(smd-and-up) {
+    @include h2-desktop;
+    margin-bottom: 48px;
+  }
+}
+
+.e-single-image__wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 55%;
+
+  @include breakpoint(sm-and-up) {
+    padding-top: 45%;
+  }
+}
+
+.e-single-image__image-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.e-single-image__image {
+  font-family: "object-fit: cover;";
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

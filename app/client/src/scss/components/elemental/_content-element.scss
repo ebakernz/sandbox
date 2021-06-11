@@ -1,0 +1,17 @@
+.el-content {
+  margin-bottom: $element-gap-bottom-mobile;
+
+  @include breakpoint(smd-and-up) {
+    margin-bottom: $element-gap-bottom-desktop;
+  }
+}
+
+.el-content__title {
+  @include h2-mobile;
+  margin-bottom: 24px;
+
+  @include breakpoint(md-and-up) {
+    @include h2-desktop;
+    margin-bottom: 48px;
+  }
+}

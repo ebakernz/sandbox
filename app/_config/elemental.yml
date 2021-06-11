@@ -1,0 +1,18 @@
+Page:
+  allowed_elements:
+    - DNADesign\Elemental\Models\ElementContent
+    - Skeletor\Elemental\ColumnsElement
+    - Skeletor\Elemental\ImageContentElement
+    - Skeletor\Elemental\SingleImageElement
+    - Skeletor\Elemental\SingleVideoElement
+    - Skeletor\Elemental\EmbeddedCodeElement
+  allowed_elements_sidebar:
+    - DNADesign\Elemental\Models\ElementContent
+
+Skeletor\Pages\HomePage:
+  allowed_elements:
+    - Skeletor\Elemental\BannerElement
+  allowed_elements_sidebar:
+    - Skeletor\Elemental\SingleImageElement
+  disallowed_elements_sidebar:
+    - DNADesign\Elemental\Models\ElementContent

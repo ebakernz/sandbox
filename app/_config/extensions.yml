@@ -1,0 +1,9 @@
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Skeletor\Extensions\SiteConfigExtension
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - Skeletor\Extensions\BaseElementExtension
+Page:
+  extensions:
+    - Skeletor\Extensions\ElementalPageExtension

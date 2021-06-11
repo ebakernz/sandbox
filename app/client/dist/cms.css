@@ -1,0 +1,53 @@
+.image-content-alignment-options .form-check-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-left: 50px; }
+  .image-content-alignment-options .form-check-label .form-check-input {
+    position: absolute;
+    left: -9999px; }
+    .image-content-alignment-options .form-check-label .form-check-input + span {
+      display: block;
+      height: 28px;
+      line-height: 10px;
+      padding: 9px 0; }
+      .image-content-alignment-options .form-check-label .form-check-input + span:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        display: block;
+        box-sizing: content-box;
+        height: 28px;
+        width: 40px;
+        background-image: url("/_resources/app/client/assets/icons/cms/image-content-options.png");
+        background-repeat: no-repeat;
+        margin-bottom: 10px; }
+    .image-content-alignment-options .form-check-label .form-check-input.checked + span {
+      color: #29abe2; }
+    .image-content-alignment-options .form-check-label .form-check-input.option-val--content-left-image-right + span:before {
+      background-position: 0 0; }
+    .image-content-alignment-options .form-check-label .form-check-input.option-val--content-left-image-right.checked + span:before {
+      background-position: 0 -28px; }
+    .image-content-alignment-options .form-check-label .form-check-input.option-val--content-right-image-left + span:before {
+      background-position: 0 -56px; }
+    .image-content-alignment-options .form-check-label .form-check-input.option-val--content-right-image-left.checked + span:before {
+      background-position: 0 -84px; }
+    .image-content-alignment-options .form-check-label .form-check-input.option-val--content-bottom-image-top + span:before {
+      background-position: 0 -112px; }
+    .image-content-alignment-options .form-check-label .form-check-input.option-val--content-bottom-image-top.checked + span:before {
+      background-position: 0 -140px; }
+    .image-content-alignment-options .form-check-label .form-check-input.option-val--content-top-image-bottom + span:before {
+      background-position: 0 -168px; }
+    .image-content-alignment-options .form-check-label .form-check-input.option-val--content-top-image-bottom.checked + span:before {
+      background-position: 0 -196px; }
+
+.mce-i-selectall:before {
+  content: "\01F130"; }
+
+/* Hide admin sections that clients never use */
+#Menu-SilverStripe-CampaignAdmin-CampaignAdmin {
+  display: none !important; }
+
+
+/*# sourceMappingURL=cms.css.map*/

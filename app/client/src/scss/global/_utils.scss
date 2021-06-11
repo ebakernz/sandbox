@@ -1,0 +1,73 @@
+.u-container {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: map-get($grid-breakpoints, md);
+  margin: 0 auto;
+  padding: 0 $gutter-padding;
+
+  &--full-width {
+    max-width: none;
+  }
+
+  &--no-padding {
+    padding: 0;
+  }
+
+  &--overflow {
+    overflow: visible;
+  }
+
+  &--not-relative {
+    position: static;
+  }
+}
+
+.u-content {
+  @include wysiwyg-styles;
+}
+
+.u-no-scroll {
+  overflow: hidden !important;
+}
+
+.u-gutter {
+  padding-right: $gutter-padding;
+  padding-left: $gutter-padding;
+}
+
+.u-hide {
+  display: none;
+}
+
+.u-visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-justify {
+  text-align: justify;
+}
+
+.u-cf {
+  @include clearfix();
+}

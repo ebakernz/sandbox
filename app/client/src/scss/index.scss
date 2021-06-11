@@ -1,0 +1,35 @@
+@import "~sanitize.css";
+@import "~sanitize.css/forms.css";
+@import "~sanitize.css/typography.css";
+@import "~sanitize.css/reduce-motion.css";
+/**
+ * Global
+ *
+ * Styles and mixins that are used throughout the website. Keep things logically
+ * separated into concern-based filenames.
+ * The order of these includes is important.
+ **/
+@import "global/variables";
+@import "global/helpers";
+@import "global/mixins";
+@import "global/typography";
+@import "global/wysiwyg";
+@import "global/utils";
+@import "global/base";
+
+/**
+ * Self-contained components
+ *
+ * Any significant component that is reused throughout the site. Typically these would have
+ * a matching template (ie Includes/{COMPONENT_NAME}), and js (ie js/{COMPONENT_NAME}).
+ **/
+@import "components/forms";
+@import "components/menu";
+
+@import "components/elemental/banner-element";
+@import "components/elemental/content-element";
+@import "components/elemental/columns-element";
+@import "components/elemental/image-content-element";
+@import "components/elemental/single-image-element";
+@import "components/elemental/single-video-element";
+@import "components/elemental/embedded-code-element";

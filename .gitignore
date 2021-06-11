@@ -1,0 +1,26 @@
+/dms-assets/
+/vendor/
+/silverstripe-cache/
+/app/client/node_modules/
+/node_modules/
+/public/assets/
+/public/resources/
+/public/_resources/
+/from-remote/
+.DS_Store
+*.orig
+Thumbs.db
+npm-debug.log
+php_errors.log
+error.log
+silverstripe.log
+sitemap.xml
+.sass-cache/
+.env
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/launch.json
+!.vscode/config.php_cs
+!.vscode/settings.json
+!.vscode/extensions.json

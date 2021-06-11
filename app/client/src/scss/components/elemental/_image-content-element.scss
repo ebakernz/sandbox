@@ -1,0 +1,126 @@
+$column-gap-tablet: 48px;
+$column-gap-desktop: 64px;
+
+.e-image-content {
+  margin-bottom: $element-gap-bottom-mobile;
+
+  @include breakpoint(smd-and-up) {
+    margin-bottom: $element-gap-bottom-desktop;
+  }
+
+  &--content-left-image-right {
+  }
+
+  &--content-right-image-left {
+    .e-image-content__wrapper {
+      flex-direction: column-reverse;
+      @include breakpoint(smd-and-up) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .e-image-content__content-wrapper {
+      margin: 0;
+    }
+
+    .e-image-content__image-wrapper {
+      margin: 0 0 64px 0; //bottom
+      @include breakpoint(smd-and-up) {
+        margin: 0 $column-gap-tablet 0 0; //right
+      }
+      @include breakpoint(md-and-up) {
+        margin: 0 $column-gap-desktop 0 0; //right
+      }
+    }
+  }
+
+  &--content-bottom-image-top {
+    .e-image-content__wrapper {
+      flex-direction: column-reverse;
+    }
+
+    .e-image-content__content-wrapper {
+      width: 100%;
+      margin: 0;
+    }
+
+    .e-image-content__image-wrapper {
+      width: 100%;
+      margin: 0 0 64px 0; //bottom
+      padding-top: 56.25%;
+    }
+  }
+
+  &--content-top-image-bottom {
+    .e-image-content__wrapper {
+      flex-direction: column;
+    }
+
+    .e-image-content__content-wrapper {
+      width: 100%;
+      margin: 0 0 64px 0; //bottom
+    }
+
+    .e-image-content__image-wrapper {
+      width: 100%;
+      margin: 0;
+      padding-top: 56.25%;
+    }
+  }
+}
+
+.e-image-content__title {
+  @include h2-mobile;
+  margin-bottom: 24px;
+
+  @include breakpoint(smd-and-up) {
+    @include h2-desktop;
+    margin-bottom: 48px;
+  }
+}
+
+.e-image-content__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  @include breakpoint(smd-and-up) {
+    flex-direction: row;
+  }
+}
+
+.e-image-content__content-wrapper {
+  width: 100%;
+  margin: 0 0 64px 0; //bottom
+  @include breakpoint(smd-and-up) {
+    width: 50%;
+    margin: 0 $column-gap-tablet 0 0; //right
+  }
+  @include breakpoint(md-and-up) {
+    margin: 0 $column-gap-desktop 0 0; //right
+  }
+}
+
+.e-image-content__image-content {
+}
+
+.e-image-content__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  @include breakpoint(smd-and-up) {
+    width: 50%;
+    padding-top: 50%;
+  }
+}
+
+.e-image-content__image {
+  font-family: "object-fit: cover;";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

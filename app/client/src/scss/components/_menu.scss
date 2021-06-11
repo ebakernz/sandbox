@@ -1,0 +1,28 @@
+.c-menu {
+}
+
+.c-menu__item {
+  position: relative;
+  display: block;
+
+  &--current {
+    & > .c-menu__item-link {
+      font-weight: 600;
+    }
+  }
+
+  &--expanded {
+    & > .c-menu__submenu {
+      display: block;
+    }
+  }
+}
+
+.c-menu__link {
+  text-decoration: none;
+}
+
+.c-menu__submenu {
+  display: none;
+  margin-left: 15px;
+}
